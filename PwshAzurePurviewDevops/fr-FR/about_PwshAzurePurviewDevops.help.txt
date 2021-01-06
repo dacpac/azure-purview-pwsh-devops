@@ -1,0 +1,16 @@
+PSTOPIC
+    about_PwshAzurePurviewDevops
+
+SHORT DESCRIPTION
+    PwshAzurePurviewDevops vous permet de travailler avec l'API REST Azure Purview via les fonctions PowerShell
+
+LONG DESCRIPTION
+    PwshAzurePurviewDevops vous permet de travailler avec l'API REST Azure Purview via les fonctions PowerShell
+
+    Vous pouvez trouver plus de documentation ici:
+        https://github.com/dacpac/azure-purview-pwsh-devops/wiki
+
+DETAILED DESCRIPTION
+    Il s'agit d'un module d'aperçu qui permet d'interroger les objets de l'API REST Azure Purview.
+
+    Le module de prévisualisation utilise des commandes pour aider à contrôler la source des objets Azure Purview (Apache Atlas) qui peuvent ensuite être promus vers d'autres comptes et environnements Purview à l'aide d'Azure Devops Pipelines.
