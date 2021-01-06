@@ -6,6 +6,7 @@ To get started on building a module i have followed this article written by Kevi
 
 [Powershell: Building a Module, one microstep at a time](https://powershellexplained.com/2017-05-27-Powershell-module-building-basics/)
 
-There is also another good blog post I've come across written by Michael Willis
+There other good blog post's I've come across:
 
-[Hitchhikers Guide to the Powershell Module Pipeline](https://xainey.github.io/2017/powershell-module-pipeline/)
+- Michael Willis - [Hitchhikers Guide to the Powershell Module Pipeline](https://xainey.github.io/2017/powershell-module-pipeline/)
+- Warren Frame - [Building a PowerShell Modeul](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/)

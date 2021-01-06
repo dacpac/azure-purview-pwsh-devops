@@ -9,10 +9,10 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = ''
+RootModule = 'PwshAzurePurviewDevops.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '0.0.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -129,4 +129,3 @@ HelpInfoURI = 'https://github.com/dacpac/azure-purview-pwsh-devops/wiki'
 # DefaultCommandPrefix = ''
 
 }
-
