@@ -1,12 +1,19 @@
 <# Get Public and Private function definition files. #>
-$Public = @( Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -ErrorAction SilentlyContinue )
-$Private = @( Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -ErrorAction SilentlyContinue )
+Write-Verbose 'Importing Functions...'
 
-foreach ($import in @($Private + $Public)) {
-    try {
-        . $import.FullName
+# Import everything in these folders
+foreach ($folder in @('Private', 'Public')) {
+    $root = Join-Path -Path $PSScriptRoot -ChildPath $folder
+
+    if (Test-Path -Path $root) {
+        Write-Verbose "Processing folder $($root)"
+        $files = Get-ChildItem -Path $root -Filter '*.ps1'
+        # dot source each file
+        $files | 
+        Where-Object { $_.Name -notlike '*.Tests.ps1' } | 
+        ForEach-Object { 
+            Write-Verbose $_.Name 
+            . $_.FullName 
+        }          
     }
-    catch {
-        Write-Error -Message "Failed to import function $($import.FullName): $_"
-    } 
 }
