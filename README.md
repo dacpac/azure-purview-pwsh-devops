@@ -10,3 +10,11 @@ There other good blog post's I've come across:
 
 - Michael Willis - [Hitchhikers Guide to the Powershell Module Pipeline](https://xainey.github.io/2017/powershell-module-pipeline/)
 - Warren Frame - [Building a PowerShell Modeul](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/)
+
+# Instructions
+
+TODO
+
+# Examples
+
+TODO
